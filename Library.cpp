@@ -1,5 +1,4 @@
-#include <iostream>
-//mnyika 
+#include <iostream> 
 #include <fstream>
 #include <string>
 
