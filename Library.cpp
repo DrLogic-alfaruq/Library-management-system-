@@ -26,7 +26,7 @@ public:
     }
 };
 
-// Function to add a book to the file
+
 void addBook() {
     Book book;
     book.getBookDetails();
