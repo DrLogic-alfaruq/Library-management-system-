@@ -37,7 +37,7 @@ void addBook() {
     cout << "Book added successfully!\n";
 }
 
-// Function to display all books
+
 void displayBooks() {
     ifstream inFile("library.txt");
     if (!inFile) {
