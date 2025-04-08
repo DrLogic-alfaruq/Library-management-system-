@@ -2,7 +2,7 @@
 // comments
 #include <fstream>
 #include <string>
- // comments
+ 
 using namespace std;
 
 class Book {
