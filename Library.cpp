@@ -36,7 +36,7 @@ void addBook() {
 }
 
 
-void displayBooks() {
+
     ifstream inFile("library.txt");
     if (!inFile) {
         cout << "No books found!\n";
