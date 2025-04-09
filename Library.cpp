@@ -1,6 +1,5 @@
 #include <iostream>
 
- // comments
 using namespace std;
 
 class Book {
