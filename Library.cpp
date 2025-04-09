@@ -19,7 +19,7 @@ public:
         issued = false;
     }
 
-    void displayBook() {
+    
         cout << "Book ID: " << bookID << "\nTitle: " << title << "\nAuthor: " << author;
         cout << "\nStatus: " << (issued ? "Issued" : "Available") << "\n";
     }
