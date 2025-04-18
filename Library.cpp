@@ -1,5 +1,4 @@
 
-// comments
 using namespace std;
 
 class Book {
