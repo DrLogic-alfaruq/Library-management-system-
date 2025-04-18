@@ -54,7 +54,7 @@ void addBook() {
     inFile.close();
 }
 
-// Function to search a book
+
 void searchBook(string id) {
     ifstream inFile("library.txt");
     if (!inFile) {
