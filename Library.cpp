@@ -40,7 +40,7 @@ public:
         return;
     }
 
-    Book book;
+    
     while (inFile >> book.bookID) {
         inFile.ignore();
         getline(inFile, book.title, '|');
