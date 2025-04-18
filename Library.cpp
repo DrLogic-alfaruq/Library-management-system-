@@ -18,7 +18,7 @@ public:
     }
 
     
-        cout << "Book ID: " << bookID << "\nTitle: " << title << "\nAuthor: " << author;
+        cout << "Book ID: " << bookID << 
         cout << "\nStatus: " << (issued ? "Issued" : "Available") << "\n";
     }
 };
