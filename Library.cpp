@@ -112,7 +112,7 @@ void issueBook(string id) {
     if (!found) cout << "Book not available for issuing!\n";
 }
 
-// Function to return a book
+
 void returnBook(string id) {
     ifstream inFile("library.txt");
     ofstream outFile("temp.txt");
