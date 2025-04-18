@@ -82,7 +82,7 @@ void searchBook(string id) {
     if (!found) cout << "Book not found!\n";
 }
 
-// Function to issue a book
+
 void issueBook(string id) {
     ifstream inFile("library.txt");
     ofstream outFile("temp.txt");
