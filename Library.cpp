@@ -24,7 +24,7 @@ public:
 };
 
 
-void addBook() {
+
     Book book;
     book.getBookDetails();
     ofstream outFile("library.txt", ios::app);
