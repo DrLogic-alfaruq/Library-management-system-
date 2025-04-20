@@ -4,7 +4,7 @@ public:
     string bookID, title, author;
     bool issued;
 
-    void getBookDetails() {
+    
         cout << "Enter Book ID: ";
         cin >> bookID;
         cin.ignore();
