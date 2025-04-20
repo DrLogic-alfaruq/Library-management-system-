@@ -1,6 +1,6 @@
 
 
-public:
+
     string bookID, title, author;
     bool issued;
 
