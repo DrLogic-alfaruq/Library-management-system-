@@ -1,7 +1,7 @@
 
 
 
-    string bookID, title, author;
+    
 
 
     
