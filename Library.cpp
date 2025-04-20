@@ -5,7 +5,7 @@ public:
     bool issued;
 
     
-        cout << "Enter Book ID: ";
+        
         cin >> bookID;
         cin.ignore();
         cout << "Enter Book Title: ";
