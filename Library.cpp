@@ -7,7 +7,7 @@
     
         
     
-        cin.ignore();
+        
         cout << "Enter Book Title: ";
         getline(cin, title);
         cout << "Enter Author Name: ";
