@@ -1,4 +1,4 @@
-
+my
 
 
     
@@ -64,7 +64,7 @@ void searchBook(string id) {
     Book book;
     bool found = false;
     while (inFile >> book.bookID) {
-        inFile.ignore();
+        
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
         inFile >> book.issued;
