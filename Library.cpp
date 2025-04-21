@@ -1,16 +1,4 @@
-my
 
-
-    
-
-
-    
-        
-    
-        
-        
-   
-        getline(cin, title);
         cout << "Enter Author Name: ";
         
     }
