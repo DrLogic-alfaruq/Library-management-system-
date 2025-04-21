@@ -141,7 +141,6 @@ void returnBook(string id) {
     if (!found) cout << "Book not found or not issued!\n";
 }
 
-// Main function
 int main() {
     int choice;
     string bookID;
