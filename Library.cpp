@@ -13,7 +13,7 @@ my
         getline(cin, title);
         cout << "Enter Author Name: ";
         getline(cin, author);
-        issued = false;
+        
     }
 
     
