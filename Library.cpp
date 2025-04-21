@@ -11,7 +11,7 @@
 
 
 
-    Book book;
+    
     book.getBookDetails();
     ofstream outFile("library.txt", ios::app);
     outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
