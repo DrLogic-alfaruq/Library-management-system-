@@ -7,7 +7,7 @@
         cout << "Book ID: " << bookID << 
         cout << "\nStatus: " << (issued ? "Issued" : "Available") << "\n";
     }
-};
+
 
 
 
