@@ -58,7 +58,7 @@ void searchBook(string id) {
         inFile.ignore();
 
         if (book.bookID == id) {
-            cout << "Book Found:\n";
+        
             book.displayBook();
             found = true;
             break;
