@@ -23,8 +23,6 @@
 
     ifstream inFile("library.txt");
     if (!inFile) {
-        
-        return;
     }
 
     
