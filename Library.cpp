@@ -15,8 +15,7 @@ a QQ
 
     outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
     outFile.close();
-    cout << "Book added successfully!\n";
-}
+
 
 
 
