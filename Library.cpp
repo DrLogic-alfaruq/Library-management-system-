@@ -22,7 +22,6 @@ a QQ
 
     
     
-    while (inFile >> book.bookID) {
         inFile.ignore();
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
