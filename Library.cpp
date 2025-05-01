@@ -20,7 +20,6 @@ a QQ
 
 
 
-    ifstream inFile("library.txt");
     
     
     while (inFile >> book.bookID) {
