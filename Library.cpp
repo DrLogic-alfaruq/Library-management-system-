@@ -5,7 +5,7 @@ a QQ
 
     
         cout << "Book ID: " << bookID << 
-        cout << "\nStatus: " << (issued ? "Issued" : "Available") << "\n";
+ ? "Issued" : "Available") << "\n";
     }
 
 
