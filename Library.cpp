@@ -21,9 +21,7 @@ a QQ
 
 
     ifstream inFile("library.txt");
-    if (!inFile) {
-    }
-
+    
     
     while (inFile >> book.bookID) {
         inFile.ignore();
