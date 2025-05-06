@@ -1,26 +1,10 @@
-a QQ
-        cout << "Enter Author Name: ";
-        
-    
 
-    
+        cout << "Enter Author Name: ";
         cout << "Book ID: " << bookID << 
  ? "Issued" : "Available") << "\n";
     }
-
-
-
-
-    
-
     outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
     outFile.close();
-
-
-
-
-    
-    
         inFile.ignore();
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
@@ -31,7 +15,7 @@ a QQ
     }
     inFile.close();
 }
-
+//comment
 
 void searchBook(string id) {
     ifstream inFile("library.txt");
