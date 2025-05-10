@@ -44,7 +44,7 @@ void searchBook(string id) {
     if (!found) cout << "Book not found!\n";
 }
 
-
+//Function to Issuing book from library
 void issueBook(string id) {
     ifstream inFile("library.txt");
     ofstream outFile("temp.txt");
