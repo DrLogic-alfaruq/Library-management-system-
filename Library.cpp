@@ -16,7 +16,7 @@
     inFile.close();
 }
 
-//comment
+//Function to search for book
 void searchBook(string id) {
     ifstream inFile("library.txt");
     if (!inFile) {
