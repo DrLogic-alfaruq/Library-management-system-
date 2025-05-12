@@ -10,7 +10,7 @@
         inFile >> book.issued;
         inFile.ignore();
         book.displayBook();
-        cout << "-------------------------\n";
+        cout << "----------------------\n";
     }
     inFile.close();
 }
