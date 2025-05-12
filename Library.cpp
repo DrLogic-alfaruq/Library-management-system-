@@ -1,10 +1,9 @@
  cout << "Enter Author Name: ";
-        cout << "Book ID: " << bookID << 
- ? "Issued" : "Available") << "\n";
+        cout << "Book ID: " << bookID << ? "Issued" : "Available") << "\n";
     }
-    outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
-    outFile.close();       
-//comment
+    outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";//Writing to the file
+    outFile.close();       //Closing the file after writing on it
+
         inFile.ignore();
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
