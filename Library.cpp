@@ -43,13 +43,14 @@ void searchBook(string id) {
     if (!found) cout << "Book not found!\n";
 }
 
-//Function to Issuing book from library
+//Function to Issue book from library
 void issueBook(string id) {
-    ifstream inFile("library.txt");
-    ofstream outFile("temp.txt");
+    ifstream inFile("library.txt"); //Opening and Reading file library.txt where book details stored
+    ofstream outFile("temp.txt"); //Opening and writing to the temoporay file (temp.txt) for the isssued book
     Book book;
     bool found = false;
 
+    //Loop to find the book that a user want to be issued by it.
     while (inFile >> book.bookID) {
         inFile.ignore();
         getline(inFile, book.title, '|');
@@ -57,6 +58,7 @@ void issueBook(string id) {
         inFile >> book.issued;
         inFile.ignore();
 
+        //Check if the book is available to be issued as it is not issued
         if (book.bookID == id && !book.issued) {
             book.issued = true;
             cout << "Book issued successfully!\n";
@@ -65,10 +67,10 @@ void issueBook(string id) {
         outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
     }
 
-    inFile.close();
-    outFile.close();
-    remove("library.txt");
-    rename("temp.txt", "library.txt");
+    inFile.close();//Closing the file lirary.txt
+    outFile.close(); //Closing the file, temp.txt
+    remove("library.txt"); //The file is removed as the updates are done in another file so it removed so as to be replaced by the updated file
+    rename("temp.txt", "library.txt"); //Renaming the file temp.txt as thhe new library.txt file
 
     if (!found) cout << "Book not available for issuing!\n";
 }
