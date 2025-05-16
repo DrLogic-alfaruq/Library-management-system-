@@ -17,7 +17,7 @@
 
 //Function to search for book
 void searchBook(string id) {
-    ifstream inFile("library.txt");
+    ifstream inFile("library.txt"); //Opening the file
     if (!inFile) {
         cout << "No books found!\n";
         return;
@@ -25,16 +25,16 @@ void searchBook(string id) {
 
     Book book;
     bool found = false;
-    while (inFile >> book.bookID) {
+    while (inFile >> book.bookID) {  //Iteration in the file to check the searched book
         
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
         inFile >> book.issued;
         inFile.ignore();
 
-        if (book.bookID == id) {
+        if (book.bookID == id) { //Condition that measures the resembelence betwwen each line in the file and the entered boook ID
         
-            book.displayBook();
+            book.displayBook(); //If book is found the it will invoke function displayBook(), so as to display it
             found = true;
             break;
         }
