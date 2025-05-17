@@ -12,7 +12,7 @@
         book.displayBook();
         cout << "----------------------\n";
     }
-    inFile.close();
+    inFile.close(); //Closing the file after witing to it
 }
 
 //Function to search for book
