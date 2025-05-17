@@ -15,13 +15,6 @@
     inFile.close(); //Closing the file after witing to it
 }
 
-//Function to search for book
-void searchBook(string id) {
-    ifstream inFile("library.txt"); //Opening the file
-    if (!inFile) {
-        cout << "No books found!\n";
-        return;
-    }
 
     Book book;
     bool found = false;
