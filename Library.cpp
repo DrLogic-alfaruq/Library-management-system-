@@ -43,7 +43,20 @@ void searchBook(string id) {
     if (!found) cout << "Book not found!\n";
 }
 
+//Function to Issue book from library
+void issueBook(string id) {
+    ifstream inFile("library.txt"); //Opening and Reading file library.txt where book details stored
+    ofstream outFile("temp.txt"); //Opening and writing to the temoporay file (temp.txt) for the isssued book
+    Book book;
+    bool found = false;
 
+    //Loop to find the book that a user want to be issued by it.
+    while (inFile >> book.bookID) {
+        inFile.ignore();
+        getline(inFile, book.title, '|');
+        getline(inFile, book.author, '|');
+        inFile >> book.issued;
+        inFile.ignore();
 
         //Check if the book is available to be issued as it is not issued
         if (book.bookID == id && !book.issued) {
