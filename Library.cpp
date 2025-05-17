@@ -64,6 +64,7 @@ void issueBook(string id) {
             cout << "Book issued successfully!\n";
             found = true;
         }
+        outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";
     }
 
     inFile.close();//Closing the file lirary.txt
