@@ -9,7 +9,7 @@ outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book
         book.displayBook();
         cout << "----------------------\n";
     }
-    inFile.close(); //Closing the file after witing to it
+    inFile.close(); //Closing the file after witing to ist
 }
 
 //Function to search for book
