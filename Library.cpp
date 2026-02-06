@@ -1,5 +1,4 @@
-outFile << book.bookID << "|" << book.title << "|" << book.author << "|" << book.issued << "\n";//Writing to the file
-    outFile.close(); //Closing the file after writing on it
+; //Closing the file after writing on it
               //comments
         inFile.ignore();
         getline(inFile, book.title, '|');
