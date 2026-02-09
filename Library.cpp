@@ -1,4 +1,4 @@
-//comments 
+ 
         inFile.ignore();
         getline(inFile, book.title, '|');
         getline(inFile, book.author, '|');
